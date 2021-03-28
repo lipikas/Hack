@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Rewards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap being used -->
+  </head>
+  <body>
+    <nav>
+      <p></p>
+      <ul class = 'nav_links'>
+          <li><a class = 'l' href="index.html"> Home</a> </li>
+          <li><a class = 'l' href="myProfile.html"> My Profile</a> </li>
+          <li><a class = 'l'  href="rewards.html"> My rewards</a> </li>
+      </ul>
+      <button type="button" class="btn btn-light">Logout</button>
+  </nav>
+  
+    <!-- Title -->
+    <div class = "rewards">
+      <div class = "title"><p id="page_title">My Rewards</p> </div>
+      <div class="main">
+      <div class = "meter">
+        <div class = "head1">
+          <p>Currrent Points:</p> <!-- User's Current Points-->
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+      </div>
+      <div class="curr_rewards"> <!-- User's Current Rewards-->
+        <div class = "head1">
+          <p>Currrent Rewards:</p>
+        </div>
+        <div> 
+          <p class = "action">Not at the moment! But each action counts!</p>
+        </div>
+      </div>
+    </div>
+      <br>
+      <div class="level_up"> <!-- Level Up-->
+          <p class = "head1">Leveling Up:</p>
+          <p>Fire Nation has some perks in place for you! But Fire Nation needs your
+          help your help first. Below are some actions you can take to help Fire
+          nation and help others around the world!</p>
+      </div>
+    </div>
+    <br>
+    <div class = "all_rewards"> <!-- Ways to Level Up-->
+      <divc class = "icons">
+      <table aria-describedby="hhh">
+       <tr>
+         <th id = "title2">Icons</th>
+         <th id= "title2">Icons</th>
+       </tr>
+        <tr>
+          <td><button class = "buttonb1" > Share your RedCross post ~ 10 points </button></th>
+          <td> <button class = "buttonb1">Referral ~ 30 points</button></th>
+        </tr>
+        <tr>
+          <td><button class = "buttonb1">Volunteer at Blood Drives ~ 50 points</button></td>
+          <td><button class = "buttonb1">Donate Blood at Blood Drives ~ 70 points</button></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <br>
+    <br>
+    <p class = "header">Level Info:</p>  <!-- Level Up Perks-->
+    <div class="level_info">
+        <div class="level1">
+          <p class = "header"> Level 1 <span class = "para"> (Basic)</span></p>
+          <p>
+            Perks: 
+            <ul class = 'perks'>
+              <li> Special thanks from Water Nation and people who you helped by donating blood!</li>
+              <li> Track how many lives you saved and counting! </li>
+            </ul>
+          </p>
+        </div>
+        <div class="level2">
+          <p class = "header"> Level 2 <span class = "para"> (>300 points)</span></p>
+          <p>
+            Perks: 
+            <ul class = 'perks'>
+              <li> Donor of Month</li>
+              <li> Qualify for monthly sweepstakes</li>
+              <li> Includes all Level 1 benefits</li>
+            </ul>
+          </p>
+        </div>
+        <div class="level3">
+          <p class = "header"> Level 3 <span class = "para"> (>500 points)</span></p>
+          <p>
+            Perks: 
+            <ul class = 'perks'>
+              <li> Donor of Month</li>
+              <li> Qualify for monthly sweepstakes</li>
+              <li> Swag t-shirts</li>
+              <li> Includes all Level 1 & 2 benefits</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script>
+      var progressbar = $('.progress-bar');
+      let points = 300;
+      var progressNum = 0;
+      // Current Rewards
+      var action1= $('.action');
+      setInterval(function(){ 
+        let result = "Track no of lives you saved & Recieve Special Thanks from Red Cross Team & others impacted by your blood donations"
+        if(points >= 500) {
+          result =  "Qualify for donor of month & monthly sweepstakes and earn giftcard, Track no of lives you saved & Special Thanks from Red Cross Team & others"
+        }
+        else if(points>=300){
+          result =  "Qualify for donor of month & monthly sweepstakes and earn giftcard, Track no of lives you saved, Swag T-Shirts & Special Thanks from Red Cross Team & others"
+        }
+        else if (points == 0){
+          result = "Not at the moment! But each action counts!"
+        }
+        // if (progressNum> 100*(points/$levelpoints)) return false;
+        // progressNum+=3;
+        // action.css('width', progressNum+ '%');
+        // progressbar.attr("aria-valuenow", progressNum); 
+        action1.text(result); 
+        console.log(points);
+      }, 500);
+
+        // Updating points
+        const buttons = document.querySelectorAll('.buttonb1');
+
+        buttons.forEach((button)=>{
+
+            button.addEventListener('click', () =>{
+                points += 10;
+            })
+        })
+      
+      
+      // Progress Bar
+      setInterval(function(){
+        $levelpoints = 300;
+        if(points >= 300) {
+          $levelpoints = 500;
+        }
+        if (progressNum> 100*(points/$levelpoints)) return false;
+        progressNum+=3;
+        progressbar.css('width', progressNum+ '%');
+        progressbar.attr("aria-valuenow", progressNum); 
+        progressbar.text(Math.ceil(100*(points/$levelpoints))+"%"); 
+        console.log(points);
+      }, 500);
+
+
+      </script>
+  </body>
+</html>

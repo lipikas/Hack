@@ -326,3 +326,6 @@ cursor: pointer;
 #forgot-password:hover {
 opacity: 0.7;
 }
+.hide{
+    display:none;
+}
